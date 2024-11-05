@@ -1,0 +1,38 @@
+import random
+
+def tirar_dado():
+    return random.randint(1, 6)
+
+# Inicializamos las puntuaciones
+puntuacion_jugador = 0
+puntuacion_maquina = 0
+
+print "¡Bienvenido al juego de los dados!"
+
+# Hacemos 3 rondas
+for ronda in range(1, 4):
+    print "\nRonda %d:" % ronda
+
+    # Turno del jugador
+    raw_input("Presiona Enter para tirar el dado...")
+    tiro_jugador = tirar_dado()
+    print "Has sacado un %d" % tiro_jugador
+    puntuacion_jugador += tiro_jugador
+
+    # Turno de la máquina
+    tiro_maquina = tirar_dado()
+    print "La máquina ha sacado un %d" % tiro_maquina
+    puntuacion_maquina += tiro_maquina
+
+# Mostramos los resultados finales
+print "\n--- Resultados Finales ---"
+print "Tu puntuación total: %d" % puntuacion_jugador
+print "Puntuación total de la máquina: %d" % puntuacion_maquina
+
+# Determinamos el ganador
+if puntuacion_jugador > puntuacion_maquina:
+    print "¡Felicidades! ¡Has ganado!"
+elif puntuacion_jugador < puntuacion_maquina:
+    print "La máquina ha ganado. ¡Mejor suerte la próxima vez!"
+else:
+    print "¡Es un empate!"
