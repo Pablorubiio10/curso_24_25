@@ -1,0 +1,12 @@
+package MisProgramas;
+
+public class ALumnoDeportista extends Alumno {
+   private String deporte;
+   public ALumnoDeportista(String nombre, String apellido1, String apellido2,String deporte) {
+       super(nombre, apellido1, apellido2);
+       this.deporte=deporte;
+   }
+   
+   
+
+}
