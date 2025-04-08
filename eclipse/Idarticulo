@@ -1,0 +1,94 @@
+package MisProgramas;
+
+public class Articulo {
+   private int iDArticulo;
+   private String nombre;
+   private String formato;
+   private String vendedor;
+   private double precio;
+   /**
+    * @param iDArticulo
+    * @param nombre
+    */
+   public Articulo(int iDArticulo, String nombre) {
+       this.iDArticulo = iDArticulo;
+       this.nombre = nombre;
+   }
+   /**
+    * @param iDArticulo
+    * @param nombre
+    * @param vendedor
+    * @param precio
+    */
+   public Articulo(int iDArticulo, String nombre, String vendedor, double precio) {
+       this.iDArticulo = iDArticulo;
+       this.nombre = nombre;
+       this.vendedor = vendedor;
+       this.precio = precio;
+   }
+   /**
+    * @return the iDArticulo
+    */
+   public int getiDArticulo() {
+       return iDArticulo;
+   }
+   /**
+    * @param iDArticulo the iDArticulo to set
+    */
+   public void setiDArticulo(int iDArticulo) {
+       this.iDArticulo = iDArticulo;
+   }
+   /**
+    * @return the nombre
+    */
+   public String getNombre() {
+       return nombre;
+   }
+   /**
+    * @param nombre the nombre to set
+    */
+   public void setNombre(String nombre) {
+       this.nombre = nombre;
+   }
+   /**
+    * @return the formato
+    */
+   public String getFormato() {
+       return formato;
+   }
+   /**
+    * @param formato the formato to set
+    */
+   public void setFormato(String formato) {
+       this.formato = formato;
+   }
+   /**
+    * @return the vendedor
+    */
+   public String getVendedor() {
+       return vendedor;
+   }
+   /**
+    * @param vendedor the vendedor to set
+    */
+   public void setVendedor(String vendedor) {
+       this.vendedor = vendedor;
+   }
+   /**
+    * @return the precio
+    */
+   public double getPrecio() {
+       return precio;
+   }
+   /**
+    * @param precio the precio to set
+    */
+   public void setPrecio(double precio) {
+       this.precio = precio;
+   }
+   public double getPrecioIva(){
+       double precioIva=precio+0.21*precio;
+       return(precioIva);
+   }
+
+}
