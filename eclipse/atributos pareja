@@ -1,0 +1,40 @@
+package MisProgramas;
+
+public class ParejaNumeros {
+   //Atributos
+   int x;
+   int y;
+   //Constructor
+   public ParejaNumeros(int x,int y){
+       this.x=x;//el x de mi clase toma el valor del x que recibo de fuera
+       this.y=y;
+       //this.x es la x interna "original"
+   }
+   //Métodos getters &setters
+   int getX(){
+       return(x);
+   }
+   int getY() {
+       return(y);
+   }
+   void setX(int x){
+       this.x=x;
+   }
+   void setY(int y) {
+       this.y=y;    
+   }
+   
+   
+   double devuelveModulo(){
+       double modulo=0;
+       modulo=Math.sqrt(modulo);
+       return(modulo);
+       
+   }
+   double devuelveAngulo(){
+       double angulo=0;
+       angulo=Math.atan(angulo);
+       return(angulo);
+   }
+
+}
