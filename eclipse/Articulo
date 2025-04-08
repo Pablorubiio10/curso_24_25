@@ -1,0 +1,12 @@
+package MisProgramas;
+
+public class ManejaArticulo {
+
+   public static void main(String[] args) {
+       ArticuloComestible articulo1;
+       articulo1=new ArticuloComestible(1,"Leche",1,12,2025,"Lacteos");
+       System.out.println(articulo1.getiDArticulo()+" "+articulo1.getNombre()+" "+articulo1.getFechaCaducidad(1));
+
+   }
+
+}
